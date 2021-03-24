@@ -35,6 +35,6 @@ t3 = "2019-03-11: 23.5, 19/03/12: 12.7, 2019.03.13: 11.1, 2019-marzec-14: 14.3"
 str_extract_all(t3, pattern = "[0-9](\\-|\\.)[a-zA-Z0-9]+(\\-|\\.)[0-9]+")
 
 # ZADANIE 5
-wartosci2 = str_extract_all(t3, pattern = "\\:\\s[0-9]+\\.[0-9]")
-wartosci = str_extract_all(wartosci2, pattern = "[0-9]+\\.[0-9]")
+war_prawie = str_extract_all(t3, pattern = "\\:\\s[0-9]+\\.[0-9]")
+wartosci = str_extract_all(war_prawie, pattern = "[0-9]+\\.[0-9]")
 wartosci
