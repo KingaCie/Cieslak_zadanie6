@@ -31,14 +31,10 @@ horoskop2 = function(imie, miesiac){
 
 # ZADANIE 4
 t3 = "2019-03-11: 23.5, 19/03/12: 12.7, 2019.03.13: 11.1, 2019-marzec-14: 14.3"
-#daty
+
 str_extract_all(t3, pattern = "[0-9](\\-|\\.)[a-zA-Z0-9]+(\\-|\\.)[0-9]+")
 
 # ZADANIE 5
 wartosci2 = str_extract_all(t3, pattern = "\\:\\s[0-9]+\\.[0-9]")
 wartosci = str_extract_all(wartosci2, pattern = "[0-9]+\\.[0-9]")
 wartosci
-
-# ZADANIE 6
-wsp = c("52°24′N 16°55′E", "53°08′07″N 23°08′44″E", "39°6′N 84°31′W")
-str_extract_all(wsp, pattern = "[0-9]+\\°")
